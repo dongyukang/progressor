@@ -10,25 +10,26 @@ class Navigation extends Component {
                 <div className="ml-8 mb-2">
                     <Link to="/">
                         <button className="flex flex-start">
-                            <h1 className="font-bold tracking-wide text-xl"> Progressor </h1>
+                            <h1 className="font-bold tracking-wide text-3xl"> Progressor </h1>
                         </button>
                     </Link>
                 </div>
 
                 {/* Navigation Items */}
                 <div className="mr-8 mb-2">
-                    <div className="flex justify-end -mt-8">
+                    <div className="flex justify-end -mt-10">
                         {/* If logged in as admin */}
-                        <NavElement navTo="/projects" title="Projects" />
-                        <NavElement navTo="/clients" title="Clients" />
 
-                        {/* If logged in as client */}
-                        <NavElement navTo="/my-projects" title="My Projects" />
-                        
-                        <NavElement navTo="/logout" title="Logout" />
+                        {/* <NavElement navTo="/projects" title="Projects" /> */}
+                        <NavElement navTo="/clients" title="My Clients" />
+
+                        {/* If logged in as client || admin */}
+                        <NavElement navTo="/projects-in-progress" title="Projects In Progress" />
 
                         {/* If not logged in */}
                         <NavElement navTo="/login" title="Login" />
+
+                        <NavElement navTo="/logout" title="Logout" />
                     </div>
                 </div>
             </div>
