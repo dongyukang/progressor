@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './navigation/Navigation';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Home, Clients, Login, MyProjects, Projects } from './pages';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
     render() {
@@ -8,6 +9,12 @@ class App extends Component {
             <div>
                 <Router>
                     <Navigation />
+
+                    <Route exact path="/" component={ Home } />
+                    <Route path="/clients" component={ Clients } />
+                    <Route path="/projects" component={ Projects } />
+                    <Route path="/my-projects" component={ MyProjects } />
+                    <Route path="/login" component={ Login } />
                 </Router>
             </div>
         );  
