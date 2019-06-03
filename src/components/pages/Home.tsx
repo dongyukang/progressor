@@ -11,17 +11,12 @@ class Home extends Component {
                     </h1>
                 </div>
 
-                <div className="container mx-auto bg-gray-200 px-8 py-6 mt-2 rounded-lg">
-                    <div className="flex flex-col">
-                        <div className="flex justify-between bg-white px-4 py-6 mb-4 rounded-lg shadow">
-                            <h3 className="ml-4 text-lg"> Projects </h3>
-                            {/* <Badge counter={12} /> */}
-                        </div>
-
-                        {/* If logged in as admin */}
-                        <div className="bg-white px-4 py-6 rounded-lg shadow">
-                            <h3 className="ml-4 text-lg"> Clients </h3>
-                        </div>
+                <div className="container mx-auto border px-8 py-6 mt-2 rounded-lg">
+                    <div className="flex">
+                        <h3 className="text-xl">
+                            Projects In Progress
+                        </h3>
+                        <Badge counter={ 10 } />
                     </div>
                 </div>
             </div>

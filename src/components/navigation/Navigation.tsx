@@ -20,7 +20,6 @@ class Navigation extends Component {
                     <div className="flex justify-end -mt-10">
                         {/* If logged in as admin */}
 
-                        {/* <NavElement navTo="/projects" title="Projects" /> */}
                         <NavElement navTo="/clients" title="My Clients" />
 
                         {/* If logged in as client || admin */}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './navigation/Navigation';
-import { Home, Clients, Login, MyProjects, NotFound } from './pages'; // page components
+import { Home, Clients, Login, Projects, NotFound } from './pages'; // page components
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -13,8 +13,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={ Home } />
                         <Route path="/clients" component={ Clients } />
-                        {/* <Route path="/projects" component={ Projects } /> */}
-                        <Route path="/projects-in-progress" component={ MyProjects } />
+                        <Route path="/projects-in-progress" component={ Projects } />
                         <Route path="/login" component={ Login } />
 
                         <Route component={ NotFound }/>
