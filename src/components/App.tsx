@@ -16,7 +16,7 @@ class App extends Component {
                         <Route path="/projects-in-progress" component={ Projects } />
                         <Route path="/login" component={ Login } />
 
-                        <Route component={ NotFound }/>
+                        <Route component={ NotFound } />
                     </Switch>
                 </Router>
             </div>

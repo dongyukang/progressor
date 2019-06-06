@@ -1,5 +1,7 @@
-import Badge from '../utils/Badge';
 import React, { Component } from 'react';
+import DashboardViewProjects from '../utils/DashboardViewProjetcs';
+
+// Dashboard
 
 class Home extends Component {
     render() {
@@ -11,13 +13,8 @@ class Home extends Component {
                     </h1>
                 </div>
 
-                <div className="container mx-auto border px-8 py-6 mt-2 rounded-lg">
-                    <div className="flex">
-                        <h3 className="text-xl">
-                            Projects In Progress
-                        </h3>
-                        <Badge counter={ 10 } />
-                    </div>
+                <div className="flex">
+                    <DashboardViewProjects projectsCount={ 10 } />
                 </div>
             </div>
         ); 

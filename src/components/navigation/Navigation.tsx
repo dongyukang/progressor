@@ -18,8 +18,8 @@ class Navigation extends Component {
                 {/* Navigation Items */}
                 <div className="mr-8 mb-2">
                     <div className="flex justify-end -mt-10">
+                        <NavElement navTo="/" title="Dashboard" />
                         {/* If logged in as admin */}
-
                         <NavElement navTo="/clients" title="My Clients" />
 
                         {/* If logged in as client || admin */}
