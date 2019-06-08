@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import DashboardViewProjects from '../utils/DashboardViewProjetcs';
 
-// Dashboard
+/**
+ * This dashboard component serves as a primary view when a user fisrt vists 
+ * the Progressor. 
+ */
 
 class Home extends Component {
     render() {

@@ -1,14 +1,18 @@
+import AddClient from './AddClient';
 import React, { Component } from 'react';
+import ListProjects from './ListProjects';
+
+
+/**
+ * This component can manage clients.
+ * There are going to be several actions that user can take.
+ */
 
 class ManageClients extends Component {
     render() {
         return(
-            <div>
-                {/* Search Fields */}
-                <div className="flex justify-center py-2">
-                    <input type="text" className="w-1/3 px-2 rounded-lg shadow mr-4 text-xl "/>
-                    <button className="bg-gray-600 px-4 py-4 rounded-lg shadow text-white">Search</button>
-                </div>
+            <div className="container mx-auto bg-white px-4 py-6 mt-4">
+                <ListProjects />
             </div>
         );
     }

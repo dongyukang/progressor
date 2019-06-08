@@ -1,6 +1,12 @@
 import Badge from './Badge';
 import React, { Component } from 'react';
 
+/**
+ * This component filters out whether the visitor has access to admin.
+ * When the user logged in as admin, then he can view the Clients counter. 
+ * 
+ */
+
 interface componentState {
     admin: boolean,
 }
