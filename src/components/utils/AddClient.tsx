@@ -33,11 +33,17 @@ class AddClient extends Component<any, Client> {
     }
 
     render() {
-        return(
-            <div>
-                Add Client
-            </div>
-        );
+        if (this.props.showComponent) {
+            return(
+                <div>
+                    Add Client
+                </div>
+            );
+        } else {
+            return(
+                <div></div>
+            )
+        }
     }
 }
 
