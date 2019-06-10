@@ -18,25 +18,12 @@ class App extends Component {
             appId: process.env.REACT_APP_APP_ID 
         }
 
-        // var firebaseConfig = {
-        //     apiKey: "AIzaSyBDTkpTRBDdvzTOtGCgAF6OlFzx8Tx1jZI",
-        //     authDomain: "progressor-52592.firebaseapp.com",
-        //     databaseURL: "https://progressor-52592.firebaseio.com",
-        //     projectId: "progressor-52592",
-        //     storageBucket: "progressor-52592.appspot.com",
-        //     messagingSenderId: "426105494215",
-        //     appId: "1:426105494215:web:997f523dc8c465b6"
-        //   };
-
         firebase.initializeApp(firebaseConfig);
     }
 
     render() {
         return(
             <div>
-                <div className="text-2xl text-center">
-                    { process.env.REACT_APP_API_KEY }
-                </div>
                 <Router>
                     <Navigation />
 
